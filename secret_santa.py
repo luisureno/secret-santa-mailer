@@ -24,7 +24,7 @@ Remember to spend $50 on your gift, but don't s
         server.login(sender, password)
         server.sendmail(sender, receiver, body_msg)
 
-names_list = ['Luis', 'Angel', 'Erica', 'Elav']
+
 #this initializes the names and emails of our recipients
 names_and_emails = [
 
@@ -37,7 +37,7 @@ names_and_emails = [
 
 #this checks to make sure that there are more than 2 people in the list
 #else the program can not run
-if len(names_list) <= 1:
+if len(names_and_emails) <= 1:
     print('Not enough people to start a secret santa!')
     quit()
 random.shuffle(names_and_emails)    
